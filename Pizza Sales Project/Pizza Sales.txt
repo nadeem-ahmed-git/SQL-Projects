@@ -1,0 +1,52 @@
+create database pizzhut;
+
+CREATE TABLE orders (
+    order_id INT NOT NULL,
+    order_date DATE NOT NULL,
+    order_time TIME NOT NULL,
+    PRIMARY KEY (order_id)
+);
+
+CREATE TABLE order_details (
+    order_details_id INT NOT NULL,
+    order_id INT NOT NULL,
+    pizza_id TEXT NOT NULL,
+    quantity INT NOT NULL,
+    PRIMARY KEY (order_details_id)
+);
+
+-- Q1. Retrieve the total number of orders placed.
+
+select count(order_id) as total_orders from orders;
+
+-- Q2. Calculate the total revenue generated from pizza sales.
+
+SELECT 
+    ROUND(SUM(pizzas.price * order_details.quantity),
+            2) AS total_revenue
+FROM
+    pizzas
+        JOIN
+    order_details ON pizzas.pizza_id = order_details.pizza_id;
+; 
+
+-- Q3. Identify the highest-priced pizza.
+
+SELECT 
+    pizza_types.name, pizzas.price
+FROM
+    pizza_types
+        JOIN
+    pizzas ON pizza_types.pizza_type_id = pizzas.pizza_type_id
+ORDER BY pizzas.price DESC
+LIMIT 1;
+
+-- Q4. Identify the most common pizza size ordered.
+
+select pizzas.size, count(order_details.order_details_id) 
+from pizzas join orders_details
+on pizzas.pizza_id = order_details.pizza_id
+group by pizzas.size;
+
+
+
