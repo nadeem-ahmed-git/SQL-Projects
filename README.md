@@ -29,4 +29,27 @@ Advanced Analysis:
   •	Analyzed the cumulative revenue generated over time by calculating the total revenue for each date along with a running total of revenue across all previous dates.
   •	Identified the top 3 revenue-generating pizza types within each category by joining tables, grouping by category and name, calculating revenue, ranking pizzas within each category by revenue descending, and selecting the top 3 for each category.
 
+  ## 2. Diabetes Prediction (Internship)
+
+  This project focused on diabetes prediction, where I created and managed a database schema to store patient data effectively. Using SQL queries, I analyzed patient information by retrieving Patient_ids and ages, calculating averages like BMI and HbA1c levels, ranking data based on blood glucose levels, updating records for certain conditions like age and smoking history, inserting new patient data, creating a view to display specific patient information, and ensuring data integrity with unique constraints.
+
+  Insights:
+•	Analyzed patient data to retrieve Patient_ids and ages of all patients.
+•	Selected female patients over 40 years old and their details.
+•	Calculated the average BMI of patients.
+•	Listed patients in descending order of blood glucose levels.
+•	Identified patients with hypertension and diabetes.
+•	Determined the number of patients with heart disease.
+•	Grouped patients by smoking history and counted smokers and non-smokers.
+•	Retrieved Patient_ids of patients with a BMI higher than the average.
+•	Found the patients with the highest and lowest HbA1c levels.
+•	Ranked patients by blood glucose level within gender groups.
+•	Updated smoking history for patients over 50 to "Ex-smoker."
+•	Inserted a new patient into the database with sample data.
+•	Deleted patients with heart disease from the database.
+•	Found patients with hypertension but not diabetes using the EXCEPT operator.
+•	Defined a unique constraint on the "patient_id" column to ensure uniqueness.
+•	Created a view displaying Patient_ids, ages, and BMI of patients.a
+
+
 
