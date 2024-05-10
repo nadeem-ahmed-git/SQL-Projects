@@ -33,6 +33,8 @@ Advanced Analysis:
 
   ## 2. Diabetes Prediction (Internship)
 
+  ![img](https://github.com/nadeem-ahmed-git/SQL-Projects/blob/main/Diabetes%20Prediction/Diabetes%20prediction.png)
+
   This project focused on diabetes prediction, where I created and managed a database schema to store patient data effectively. Using SQL queries, I analyzed patient information by retrieving Patient_ids and ages, calculating averages like BMI and HbA1c levels, ranking data based on blood glucose levels, updating records for certain conditions like age and smoking history, inserting new patient data, creating a view to display specific patient information, and ensuring data integrity with unique constraints.
 
   Insights:
