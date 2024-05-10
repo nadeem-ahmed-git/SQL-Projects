@@ -2,6 +2,8 @@
 
 ## 1. Pizza Sales Project
 
+![img](https://github.com/nadeem-ahmed-git/SQL-Projects/blob/main/Pizza%20Sales%20Project/Pizza%20Sales%20data%20model.png)
+
 This project involved creating a database schema for a pizza sales system and then using SQL queries to analyze sales data. Here's a breakdown of what I accomplished:
 
 Database Creation:
